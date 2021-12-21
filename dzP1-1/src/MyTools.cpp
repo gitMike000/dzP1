@@ -38,19 +38,19 @@ public:
     virtual void WriteToLog(const std::string& str) override {
         Timer t;
         getInternalInstance().WriteToLog(str);
-        //time_log+=t.get();
+        time_log+=t.get();
     };
 
     virtual void WriteToLog(const std::string& str, int n) override {
         Timer t;
         getInternalInstance().WriteToLog(str,n);
-        //time_log+=t.get();
+        time_log+=t.get();
     };
 
     virtual void WriteToLog(const std::string& str, double d) override {
         Timer t;
         getInternalInstance().WriteToLog(str,d);
-        //time_log+=t.get();
+        time_log+=t.get();
     };
 
 
